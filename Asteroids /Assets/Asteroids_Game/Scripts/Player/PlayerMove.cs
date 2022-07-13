@@ -8,16 +8,18 @@ namespace Asteroids
     {
       
         private float Speed = 15;
+        
 
-        public  void Move (PlayerView player, float x, float y, float z)
+        public  void Move ( PlayerView player,  float x, float y, float z)
         {
-           
+
 
             if (player._rigidbody)
             {
                 player._rigidbody.AddForce(new Vector3(x, y, z) * Speed);
-                
+
             }
+            else Debug.Log("Не найден Риджет боди");
         }
     }
 }

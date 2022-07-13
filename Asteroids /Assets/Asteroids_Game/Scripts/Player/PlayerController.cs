@@ -11,7 +11,7 @@ namespace Asteroids
         float Y;
         float Z;
 
-        public void UpdateControllerMove(PlayerMove playerMove, PlayerView player)
+        public void UpdateControllerMove(PlayerMove playerMove, PlayerView player )
         {
             
                 X = Input.GetAxis("Horizontal");
